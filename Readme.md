@@ -1,18 +1,18 @@
 
 📧 Email Assistant AI
-This project is an intelligent Gmail assistant that automatically:
+    This project is an intelligent Gmail assistant that automatically:
 
 ✅ Fetches your latest emails from Gmail
 
 ✅ Classifies them into categories such as:
 
-Personal
+    Personal
 
-Job Offer
+    Job Offer
 
-Job Application Updates
+    Job Application Updates
 
-(and others like Newsletter, Finance, Promotion, etc.)
+    (and others like Newsletter, Finance, Promotion, etc.)
 
 ✅ Generates smart, context-aware replies for the first 3 categories
 
@@ -27,75 +27,68 @@ Feature	Description
 
 📦 Setup Instructions
 1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/BavyaSree-C/Email_reply_assistant.git
-cd email-assistant-ai
+
+    git clone https://github.com/BavyaSree-C/Email_reply_assistant.git
+    cd email-assistant-ai
+
 2. Install Requirements
-bash
-Copy
-Edit
-pip install -r requirements.txt
+    pip install -r requirements.txt
+
 3. Set Up Gmail API
-Go to Google Cloud Console
+    Go to Google Cloud Console
 
-Create a new project
+    Create a new project
 
-Enable the Gmail API
+    Enable the Gmail API
 
-Download credentials.json and place it in your project directory
+    Download credentials.json and place it in your project directory
 
 4. Create .env File
-env
-Copy
-Edit
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-Get your API key from https://openrouter.ai
+
+    OPENROUTER_API_KEY=your_openrouter_api_key_here
+    Get your API key from https://openrouter.ai
 
 5. Run the Assistant
-python email_assistant.py
+    python email_assistant.py
 
 🧠 Email Categories
-Only these categories will trigger automated replies:
+    Only these categories will trigger automated replies:
 
-Personal – e.g., casual conversations
+    Personal – e.g., casual conversations
 
-Job Offer – e.g., interview invites or offer letters
+    Job Offer – e.g., interview invites or offer letters
 
-Job Application Updates – e.g., updates on your application status
+    Job Application Updates – e.g., updates on your application status
 
-Other types (e.g., newsletters, finance, promotions) are skipped.
+    Other types (e.g., newsletters, finance, promotions) are skipped.
 
 📂 Output
-Replies are saved as drafts in your Gmail
+    Replies are saved as drafts in your Gmail
 
-You can review and manually send them
+    You can review and manually send them
 
 🔐 Security Notice
-Make sure to add the following files to .gitignore:
+    Make sure to add the following files to .gitignore:
 
-gitignore
-Copy
-Edit
-.env
-token.json
-credentials.json
-🛠 Tech Stack
-Python
+        gitignore
+        .env
+        token.json
+        credentials.json
+        🛠 Tech Stack
+        Python
 
-OpenRouter (LLM via GPT-3.5 / GPT-4)
+    OpenRouter (LLM via GPT-3.5 / GPT-4)
 
-Google Gmail API
+    Google Gmail API
 
-LangChain (Gmail utils)
+    LangChain (Gmail utils)
 
 💡 Future Improvements
- Auto-send with confirmation
+    Auto-send with confirmation
 
- Summarize full threads
+    Summarize full threads
 
- Web UI with Streamlit
+    Web UI with Streamlit
 
 📜 License
 MIT License
